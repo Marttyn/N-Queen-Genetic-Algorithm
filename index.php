@@ -37,6 +37,7 @@ $population->startAlgorithm($generation_limit);
     }
 
     #board {
+        display: flex;
         width:100%;
         height:100%;
         text-align: center;
@@ -87,11 +88,13 @@ $population->startAlgorithm($generation_limit);
 </style>
 
 <div id="board">
-    <h3><?= $population->foundSolution()?"Solution Found":"Solution Not Found" ?></h3>
-    <h3>Initial Population Size: <?= 2 * pow($board_size, 2) ?></h3>
-    <h3>Final Population Size: <?= count($population->getBoards()) ?></h3>
-    <h3>Board's Size: <?= $population->getBoardSize() ?></h3>
-    <h3>Mutation Rate: <?= $population->getMutationRate() ?></h3>
-    <h3>Generation's Count: <?= $population->getGenerationCount() ?></h3>
+    <div id="info">
+        <h3><?= $population->foundSolution()?"Solution Found":"Solution Not Found" ?></h3>
+        <h3>Initial Population Size: <?= 2 * pow($board_size, 2) ?></h3>
+        <h3>Final Population Size: <?= count($population->getBoards()) ?></h3>
+        <h3>Board's Size: <?= $population->getBoardSize() ?></h3>
+        <h3>Mutation Rate: <?= $population->getMutationRate() ?></h3>
+        <h3>Generation's Count: <?= $population->getGenerationCount() ?></h3>
+    </div>
     <?php echo $population->getBestSolution() ?>
 </div>
