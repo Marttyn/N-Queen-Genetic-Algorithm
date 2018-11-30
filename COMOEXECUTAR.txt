@@ -1,0 +1,9 @@
+COMO EXECUTAR
+
+1-Instale um webservice, ex. Apache ou Nginx com suporte a PHP 7.0+.
+2-Descompacte o projeto para a pasta padrão do webservice.
+3-Abra o navegador utilizando o localhost e acesse a pasta do projeto.
+
+Opcional:
+1-Configure um virtual host para o projeto e acesse atraves dele.
+2-Edite os parametros de execução no arquivo indexp.php para alterar o tamanho do tabuleiro, quantidade de filhos por geração, metodo de escolha e taxa de mutação.
