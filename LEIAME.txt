@@ -23,5 +23,5 @@ LEIA ME
 	fitness = 1 / (1 + (Nº ataques no tabuleiro))
 	Nesse caso quanto mais perto de 1 o fitness do tabuleiro for mais proximo está da solução, sendo 1 o tabuleiro possui uma das possíveis soluções.
 
-- Uma breve análise do grupo sobre o desenvolvimento do trabalho
+- Análise do algoritmo genético
 	Em comparação com o algoritmo Tempera Simulada acredito que o algoritmo genético teve um desempenho pior, pois o algoritmo Tempera Simulada possui uma heuristíca que define um caminho mais claro para a solução não contando tanto com a aleátoriedade mas a definição e implemetação de tal heuristíca é bem complexa. O algoritmo genético possui uma versatilidade maior, vejo varios cenários que podem ser solucionados com o uso do mesmo e não possui uma complexidade tão grande em seu desenvolvimento, porem devido a sua aleátoriedade pode-se tornar bem instável dependendo da escolha dos parâmetros utilizados, políticas de eliminação e crossover, com essa análise acredito que o algoritmo genético não é a melhor escolha para buscar soluções para o problema das N Rainhas.
